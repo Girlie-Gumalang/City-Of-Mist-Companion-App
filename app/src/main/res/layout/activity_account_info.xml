@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/violet"
+    tools:context=".activities.AccountInfoActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/information_header_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/light_violet"
+            android:text="INFORMATION"
+            android:textSize="25dp"
+            android:fontFamily="@font/orbitron_font"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:gravity="end|center_vertical"
+            android:paddingEnd="16dp" />
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/violet"
+            android:elevation="4dp"
+            android:titleTextColor="@android:color/white">
+
+            <ImageView
+                android:id="@+id/return_button_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Back Button"
+                android:src="@drawable/return_button" />
+        </Toolbar>
+
+        <TextView
+            android:id="@+id/account_info_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACCOUNT   INFO"
+            android:fontFamily="@font/orbitron_font"
+            android:textColor="@color/orange"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="18dp" />
+
+        <TextView
+            android:id="@+id/email_txt_acc_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:layout_marginStart="22dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/orbitron_font"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/email_account_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="example_email@domain.com"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/line_account_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_png"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/password_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginStart="22dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/orbitron_font"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/password_account_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="**************"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/edit_text_acc_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Edit Password"
+            android:layout_marginStart="160dp"
+            android:src="@drawable/edit_png"
+            android:layout_marginTop="-40dp"/>
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGOUT"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/pink"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            app:cornerRadius="24dp"
+            android:paddingHorizontal="30dp"/>
+
+        <TextView
+            android:id="@+id/contact_supp_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTACT   SUPPORT"
+            android:fontFamily="@font/orbitron_font"
+            android:textColor="@color/orange"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="18dp" />
+
+        <TextView
+            android:id="@+id/email_txt_contact_supp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:layout_marginStart="22dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/orbitron_font"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/email_account_info_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="comcompanion@domain.com"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/line_account_info_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_png"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/contact_numbers_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact   Numbers"
+            android:layout_marginStart="22dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/orbitron_font"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/contact_num_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+63 123 456 7890"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/contact_num_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+63 939 571 4201"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/line_contact_num_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_png"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/links_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Links"
+            android:layout_marginStart="22dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/orbitron_font"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/links_twitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Twitter / X:x.com/city_of_mist_companion_team"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/links_reddit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reddit: reddit.com/city_of_mist_companion_team"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/links_github"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Github: github.com/city_of_mist_companion"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/support_us_txt_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUPPORT    US!"
+            android:fontFamily="@font/orbitron_font"
+            android:textColor="@color/orange"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="18dp" />
+
+        <TextView
+            android:id="@+id/patreon_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patreon"
+            android:layout_marginStart="22dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/orbitron_font"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/patreon_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="patreon.com/city_of_mist_companion"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/line_patreon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_png"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/kofi_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ko-fi"
+            android:layout_marginStart="22dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/orbitron_font"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/kofi_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="kofi.com/city_of_mist_companion"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
