@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_change_the_game"
+        android:title="Change the Game"/>
+    <item
+        android:id="@+id/nav_convince"
+        android:title="Convince"/>
+    <item
+        android:id="@+id/nav_face_danger"
+        android:title="Face Danger"/>
+    <item
+        android:id="@+id/nav_go_toe_to_toe"
+        android:title="Go Toe to Toe"/>
+    <item
+        android:id="@+id/nav_hit_with_all_youve_got"
+        android:title="Hit With All You've Got"/>
+    <item
+        android:id="@+id/nav_investigate"
+        android:title="Investigate"/>
+    <item
+        android:id="@+id/nav_sneak_around"
+        android:title="Sneak Around"/>
+    <item
+        android:id="@+id/nav_take_the_risk"
+        android:title="Take the Risk"/>
+    <item
+        android:id="@+id/nav_glossary"
+        android:title="Glossary"/>
+    <item
+        android:id="@+id/nav_resources"
+        android:title="Resources"/>
+    <item
+        android:id="@+id/nav_rules_screen"
+        android:title="Rules Screen"/>
+
+</menu>
