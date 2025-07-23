@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="8dp">
+
+    <ImageView
+        android:id="@+id/remove_crewmate_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_remove_circle"
+        android:contentDescription="Remove Crewmate"
+        android:tint="@color/rose"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+        android:id="@+id/crewmate_name_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Crewmate Name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:backgroundTint="@color/orange"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/crewmate_help_value"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"             android:hint="0"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:backgroundTint="@color/orange" />
+
+    <EditText
+        android:id="@+id/crewmate_hurt_value"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"             android:hint="0"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:backgroundTint="@color/orange" />
+
+</LinearLayout>
