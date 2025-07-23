@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/violet"
+    android:orientation="vertical"
+    tools:context=".fragments.RulesPage">
+
+    <EditText
+        android:id="@+id/searchViewRules"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:drawablePadding="10dp"
+        android:background="@drawable/search_background"
+        android:drawableStart="@drawable/three_layer_svg"
+        android:drawableEnd="@drawable/search_icon_svg"
+        android:hint="Search rules"
+        android:paddingStart="10dp"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:textColorHint="@color/orange" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rulesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+
+</LinearLayout>
