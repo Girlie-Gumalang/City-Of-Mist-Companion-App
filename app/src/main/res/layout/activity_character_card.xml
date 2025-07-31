@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/violet"
+    tools:context=".activities.CharacterCardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingHorizontal="16dp"
+            android:background="@color/violet">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Back"
+                android:src="@drawable/return_button"
+                app:tint="@color/orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="CHARACTER CARD"
+                android:textColor="@color/orange"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                  android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/light_violet">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/character_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/darker_gray"
+                    android:src="@drawable/image_char" />
+                <TextView
+                    android:id="@+id/character_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Melody de Estrella"
+                    android:textColor="@color/orange"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-condensed" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_background_light_violet"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logos"
+                android:textColor="@color/orange"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+            <TextView
+                android:id="@+id/character_logos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ambrosia Escort"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_background_light_violet"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mythos"
+                android:textColor="@color/orange"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed" />
+
+            <TextView
+                android:id="@+id/character_mythos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aphrodite, Goddess of Love and Beauty"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="@drawable/rounded_background_light_violet">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Crewmate"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:id="@+id/help_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Help"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/hurt_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hurt"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/crewmates_list_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_crewmate_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="+ Add Crewmate"
+                android:textColor="@color/orange"
+                android:backgroundTint="@color/pink"
+                android:drawableStart="@drawable/ic_add_person"
+                android:paddingHorizontal="24dp"
+                app:cornerRadius="24dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/orange" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="@drawable/rounded_background_light_violet">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Story Tags"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invoke"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/story_tags_list_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_story_tag_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="+ Add Story Tag"
+                android:textColor="@color/orange"
+                android:backgroundTint="@color/pink"
+                android:drawableStart="@drawable/ic_add_tag"
+                android:paddingHorizontal="24dp"
+                app:cornerRadius="24dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="@drawable/rounded_background_light_violet">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Build-Up"
+                android:textColor="@color/orange"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="16dp">
+                <CheckBox style="@style/BuildUpCheckbox" android:id="@+id/buildup_checkbox_1"/>
+                <CheckBox style="@style/BuildUpCheckbox" android:id="@+id/buildup_checkbox_2"/>
+                <CheckBox style="@style/BuildUpCheckbox" android:id="@+id/buildup_checkbox_3"/>
+                <CheckBox style="@style/BuildUpCheckbox" android:id="@+id/buildup_checkbox_4"/>
+                <CheckBox style="@style/BuildUpCheckbox" android:id="@+id/buildup_checkbox_5"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Improvements"
+                android:textColor="@color/orange"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginBottom="16dp" />
+
+            <include layout="@layout/item_improvement_checkbox" android:id="@+id/improvement_1"/>
+            <include layout="@layout/item_improvement_checkbox" android:id="@+id/improvement_2"/>
+            <include layout="@layout/item_improvement_checkbox" android:id="@+id/improvement_3"/>
+            <include layout="@layout/item_improvement_checkbox" android:id="@+id/improvement_4"/>
+            <include layout="@layout/item_improvement_checkbox" android:id="@+id/improvement_5"/>
+            <include layout="@layout/item_improvement_checkbox" android:id="@+id/improvement_6"/>
+            <include layout="@layout/item_improvement_checkbox" android:id="@+id/improvement_7"/>
+            <include layout="@layout/item_improvement_checkbox" android:id="@+id/improvement_8"/>
+            <include layout="@layout/item_improvement_checkbox" android:id="@+id/improvement_9"/>
+            <include layout="@layout/item_improvement_checkbox" android:id="@+id/improvement_10"/>
+            <include layout="@layout/item_improvement_checkbox" android:id="@+id/improvement_11"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nemeses"
+                android:textColor="@color/orange"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/nemeses_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Nemesis"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/orange"
+                android:minLines="2"
+                android:gravity="top|start"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes"
+                android:textColor="@color/orange"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/notes_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Notes"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/orange"
+                android:minLines="4"
+                android:gravity="top|start"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
