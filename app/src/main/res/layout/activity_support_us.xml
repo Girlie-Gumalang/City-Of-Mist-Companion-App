@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/violet"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".activities.SupportUsActivity">
+
+    <TextView
+        android:id="@+id/support_us_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/light_violet"
+        android:text="SUPPORT  US"
+        android:textSize="22dp"
+        android:fontFamily="@font/orbitron_font"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="16dp" />
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/violet"
+        android:elevation="4dp"
+        android:titleTextColor="@android:color/white">
+
+        <ImageView
+            android:id="@+id/return_button_support_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Back Button"
+            android:src="@drawable/return_button" />
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/patreon_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patreon"
+        android:layout_marginStart="22dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/orbitron_font"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/patreon_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="patreon.com/city_of_mist_companion"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/line_patreon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_png"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/kofi_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ko-fi"
+        android:layout_marginStart="22dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/orbitron_font"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/kofi_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="kofi.com/city_of_mist_companion"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white" />
+
+</LinearLayout>
