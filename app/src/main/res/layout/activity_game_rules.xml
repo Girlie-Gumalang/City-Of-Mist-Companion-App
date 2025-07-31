@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:background="@color/violet"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_violet"
+            android:elevation="4dp" />
+
+        <TextView
+            android:id="@+id/rulesContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change the Game"
+            android:textSize="30sp"
+            android:textColor="#DE3B8A"
+            android:padding="16dp"
+            android:fontFamily="@font/orbitron_font"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="20sp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/imageGameRules"
+            android:layout_width="375dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rulesContent"
+            android:src="@drawable/image_game_rules"
+            android:layout_marginTop="-10dp" />
+
+        <ImageView
+            android:id="@+id/gameRulesDetails"
+            android:layout_width="375dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageGameRules"
+            android:src="@drawable/game_rules_details"
+            android:layout_marginTop="-45dp" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/violet"
+        app:itemTextColor="@color/orange"
+        app:itemIconTint="@color/orange"
+        app:menu="@menu/drawer_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>
