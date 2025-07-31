@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/violet"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".activities.ContactSupportActivity">
+
+    <TextView
+        android:id="@+id/contact_support_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/light_violet"
+        android:text="CONTACT  SUPPORT"
+        android:textSize="22dp"
+        android:fontFamily="@font/orbitron_font"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="16dp" />
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/violet"
+        android:elevation="4dp"
+        android:titleTextColor="@android:color/white">
+
+        <ImageView
+            android:id="@+id/return_button_contact_support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Back Button"
+            android:src="@drawable/return_button" />
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/email_txt_contact_supp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:layout_marginStart="22dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/orbitron_font"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/email_contact_supp_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="comcompanion@domain.com"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/line_contact_supp_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_png"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/contact_numbers_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact   Numbers"
+        android:layout_marginStart="22dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/orbitron_font"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/contact_num_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+63 123 456 7890"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/contact_num_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+63 939 571 4201"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/line_contact_num_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_png"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/links_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Links"
+        android:layout_marginStart="22dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/orbitron_font"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/links_twitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Twitter / X:x.com/city_of_mist_companion_team"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/links_reddit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reddit: reddit.com/city_of_mist_companion_team"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/links_github"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Github: github.com/city_of_mist_companion"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white" />
+
+</LinearLayout>
