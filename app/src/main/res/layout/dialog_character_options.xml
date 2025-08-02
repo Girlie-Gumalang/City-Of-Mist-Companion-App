@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rounded_background_light_violet"> <Button
+    android:id="@+id/export_Sheet_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Export Sheet"
+    android:textColor="@color/orange"
+    android:backgroundTint="@color/pink"
+    android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/delete_character_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Character"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/red_delete" />
+
+</LinearLayout>
