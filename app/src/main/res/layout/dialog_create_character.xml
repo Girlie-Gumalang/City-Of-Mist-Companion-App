@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="50dp"
+    android:padding="24dp"
+    android:background="@color/light_violet">
+
+    <ImageView
+        android:id="@+id/characterImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/image_char"
+        android:contentDescription="Upload Character Image"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/character_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Character Name"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/character_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/rectangle"
+        android:hint="Enter character name"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_gray"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/image_url_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image URL (Optional)"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/et_image_url" android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/rectangle"
+        android:hint="Enter image URL or select above"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_gray"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/logos_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logos"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/logos_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/rectangle"
+        android:hint="Enter logos"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_gray"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/mythos_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mythos"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/mythos_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/rectangle"
+        android:hint="Enter mythos"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_gray"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:id="@+id/create_button"
+        android:layout_width="250dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/create_btn_png"
+        android:contentDescription="@string/create_button" />
+
+    <TextView
+        android:id="@+id/change_later_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/orbitron_font"
+        android:text="You can change this later."
+        android:textColor="@color/pink"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
